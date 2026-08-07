@@ -1,19 +1,26 @@
+import { Button } from "./button";
+import { Center } from "./center";
+import { Input } from "./input";
+
 export function AuthCredentials() { 
     return <div style={{ minHeight: "100vh", display: "flex", alignItems: "center" }}>
         <div style={{ width: "100%" }}>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <Center>
                 <div style={{fontSize:30}}> Log in to trello </div>
-            </div>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            </Center>
+            <Center>
                 Connect to trello with:
-            </div>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-                <input type="text" placeholder="Email" />
-            </div>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-                <input type="password" placeholder="password" />
-            </div>
+            </Center>
+            
+            <Center>
+                <Input type='text' placeholder='Email' />
+            </Center>
+            <Center>
+             <Input type='password' placeholder='Password' />
+            </Center>
+            <Center>
+                <Button>Signup</Button>
+            </Center>
         </div>
-        
-    </div>
+   </div>
 }
